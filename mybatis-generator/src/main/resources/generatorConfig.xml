@@ -94,12 +94,18 @@
 
             <!-- 生成主键 -->
             <generatedKey column="id" sqlStatement="MySQL" identity="true"/>
+
             <!-- 忽略列，不生成bean字段 -->
             <!--<ignoreColumn column="specify_column"/>-->
+
             <!-- 指定Java属性名称 -->
             <!--<columnOverride column="specify_column" property="xproperty"/>-->
+
             <!-- 指定列的java数据类型 -->
-            <!--<columnOverride column="specify_column" jdbcType="VARCHAR"/>-->
+            <columnOverride column="type" javaType="int"/>
+            <columnOverride column="status" javaType="int"/>
+            <columnOverride column="visible" javaType="int"/>
+            <columnOverride column="deleted" javaType="int"/>
         </table>
 
     </context>
