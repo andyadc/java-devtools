@@ -54,6 +54,7 @@
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
+            <!--<property name="useJSR310Types" value="true"/>-->
         </javaTypeResolver>
 
         <!-- 生成实体类 -->
@@ -93,7 +94,7 @@
                enableCountByExample="false">
 
             <!-- 生成主键 -->
-            <generatedKey column="id" sqlStatement="MySQL" identity="true"/>
+            <!--<generatedKey column="user_id" sqlStatement="MySQL" identity="true"/>-->
 
             <!-- 忽略列，不生成bean字段 -->
             <!--<ignoreColumn column="specify_column"/>-->
@@ -106,6 +107,9 @@
             <columnOverride column="status" javaType="int"/>
             <columnOverride column="visible" javaType="int"/>
             <columnOverride column="deleted" javaType="int"/>
+            <columnOverride column="gender" javaType="int"/>
+            <columnOverride column="gender" javaType="int"/>
+            <columnOverride column="first_login" javaType="int"/>
         </table>
 
     </context>

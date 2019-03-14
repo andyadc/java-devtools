@@ -67,6 +67,12 @@
                     scale=0;length<5：使用Short；
              -->
             <property name="forceBigDecimals" value="false"/>
+            <!-- This property is used to specify whether MyBatis Generator should force the use of JSR-310 data types for DATE, TIME,
+            and TIMESTAMP fields, rather than using java.util.Date -->
+            <!--
+            http://www.mybatis.org/generator/configreference/javaTypeResolver.html
+            -->
+            <property name="useJSR310Types" value="true"/>
         </javaTypeResolver>
 
 
