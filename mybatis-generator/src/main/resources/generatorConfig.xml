@@ -8,7 +8,7 @@
     <!-- 引入配置文件 -->
     <properties resource="config.properties"/>
 
-    <!-- classPathEntry:数据库的JDBC驱动 -->
+    <!-- classPathEntry: 数据库的JDBC驱动 -->
     <!--<classPathEntry location="${jdbcClassPath}"/>-->
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
@@ -103,6 +103,7 @@
             <!--<columnOverride column="specify_column" property="xproperty"/>-->
 
             <!-- 指定列的java数据类型 -->
+            <!-- 
             <columnOverride column="type" javaType="int"/>
             <columnOverride column="status" javaType="int"/>
             <columnOverride column="visible" javaType="int"/>
@@ -110,6 +111,7 @@
             <columnOverride column="gender" javaType="int"/>
             <columnOverride column="gender" javaType="int"/>
             <columnOverride column="first_login" javaType="int"/>
+            -->
         </table>
 
     </context>
