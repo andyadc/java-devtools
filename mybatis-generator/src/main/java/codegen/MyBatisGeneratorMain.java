@@ -44,6 +44,9 @@ public class MyBatisGeneratorMain {
             for (String warning : warnings) {
                 System.out.printf("%s %n", warning);
             }
+            System.out.println("---------------------");
+        } else {
+            System.out.println("Generate success");
         }
 
     }

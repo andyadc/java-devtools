@@ -1,0 +1,5 @@
+# qq server
+jdbcConnection.driverClass=com.mysql.jdbc.Driver
+jdbcConnection.connectionURL=jdbc:mysql://www.qq-server.com:3307/idea?useUnicode=true&characterEncoding=utf-8&useSSL=false
+jdbcConnection.userId=root
+jdbcConnection.password=andyadC7,./!
