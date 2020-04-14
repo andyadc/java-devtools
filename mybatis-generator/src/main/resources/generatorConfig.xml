@@ -11,7 +11,7 @@
     <!-- classPathEntry: 数据库的JDBC驱动 -->
     <!--<classPathEntry location="${jdbcClassPath}"/>-->
 
-    <context id="DB2Tables" targetRuntime="MyBatis3">
+    <context id="DB2Tables" targetRuntime="MyBatis3" defaultModelType="flat">
 
         <!-- 生成的Java文件的编码 -->
         <property name="javaFileEncoding" value="UTF-8"/>
@@ -57,6 +57,7 @@
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
+            <!-- 为true则转成Java8日期类型:LocateDateTime-->
             <!--<property name="useJSR310Types" value="true"/>-->
         </javaTypeResolver>
 
@@ -88,7 +89,8 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+        <!-- tableName:用于自动生成代码的数据库表; domainObjectName:对应于数据库表的javaBean类名 -->
+        <!-- tableName="%" 通配符匹配全部的表-->
         <table tableName="${table.tableName}" domainObjectName="${table.domainName}"
                enableSelectByExample="${example.enable}"
                enableDeleteByExample="${example.enable}"
@@ -99,7 +101,7 @@
             <!-- 生成主键 -->
             <!--<generatedKey column="user_id" sqlStatement="MySQL" identity="true"/>-->
 
-            <!-- 忽略列，不生成bean字段 -->
+            <!-- 忽略列, 不生成bean字段 -->
             <!--<ignoreColumn column="specify_column"/>-->
 
             <!-- 指定Java属性名称 -->
