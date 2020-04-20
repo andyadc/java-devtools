@@ -41,10 +41,10 @@
         <!--<plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>-->
 
         <!-- custom pagination plugin -->
-        <plugin type="com.andyadc.mybatis.plugins.MySQLPaginationPlugin"/>
+        <plugin type="com.andyadc.mybatis.ext.MySQLPaginationPlugin"/>
 
         <!-- 去除自动生成的注释 -->
-        <commentGenerator>
+        <commentGenerator type="com.andyadc.mybatis.ext.RemarksCommentGenerator">
             <property name="suppressDate" value="true"/>
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>

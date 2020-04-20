@@ -1,4 +1,4 @@
-package com.andyadc.mybatis.plugins;
+package com.andyadc.mybatis.ext;
 
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.PluginAdapter;
