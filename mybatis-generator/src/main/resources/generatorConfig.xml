@@ -99,7 +99,10 @@
                enableCountByExample="${example.enable}">
 
             <!-- 生成主键 -->
-            <!--<generatedKey column="user_id" sqlStatement="MySQL" identity="true"/>-->
+            <generatedKey column="id" sqlStatement="MySQL" identity="true"/>
+
+            <!--在生成列之前，对列进行重命名-->
+            <!--<columnRenamingRule searchString="^prefix_" replaceString=""/>-->
 
             <!-- 忽略列, 不生成bean字段 -->
             <!--<ignoreColumn column="specify_column"/>-->
