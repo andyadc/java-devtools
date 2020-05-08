@@ -36,9 +36,12 @@
         -->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <!-- This plugin adds the @Mapper annotation to generated mapper interfaces. -->
-        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>
+        <!--<plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>-->
         <!-- This plugin adds fluent builder methods to the generated model classes. -->
         <!--<plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>-->
+
+        <!-- 默认重复生成xml文件有bug -->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
 
         <!-- custom pagination plugin -->
         <plugin type="com.andyadc.mybatis.ext.MySQLPaginationPlugin"/>
