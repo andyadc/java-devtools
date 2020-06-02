@@ -15,7 +15,8 @@ public class RemarksCommentGenerator extends DefaultCommentGenerator {
     public void addFieldComment(Field field, IntrospectedTable introspectedTable, IntrospectedColumn introspectedColumn) {
         super.addFieldComment(field, introspectedTable, introspectedColumn);
         if (StringUtility.stringHasValue(introspectedColumn.getRemarks())) {
-            field.addJavaDocLine("// " + introspectedColumn.getRemarks());
+//            field.addJavaDocLine("// " + introspectedColumn.getRemarks());
+            field.addJavaDocLine("/** " + introspectedColumn.getRemarks() + " */");
         }
     }
 }
