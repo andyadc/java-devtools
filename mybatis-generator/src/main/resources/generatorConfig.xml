@@ -6,7 +6,8 @@
 <generatorConfiguration>
 
     <!-- 引入配置文件 -->
-    <properties resource="config-99bill.properties"/>
+    <!--<properties resource="config-99bill.properties"/>-->
+    <properties resource="config.properties"/>
 
     <!-- classPathEntry: 数据库的JDBC驱动 -->
     <!--<classPathEntry location="${jdbcClassPath}"/>-->
