@@ -14,7 +14,7 @@
     <description>mybatis generator plugin</description>
 
     <properties>
-        <mysql-driver.version>5.1.49</mysql-driver.version>
+        <mysql-driver.version>8.0.28</mysql-driver.version>
         <mybatis-generator-core.version>1.4.1</mybatis-generator-core.version>
         <mybatis-generator-maven-plugin.version>1.4.1</mybatis-generator-maven-plugin.version>
         <skip_maven_deploy>true</skip_maven_deploy>
