@@ -6,7 +6,7 @@
 <generatorConfiguration>
 
     <!-- 引入配置文件 -->
-    <!--<properties resource="config-99bill.properties"/>-->
+<!--    <properties resource="config-99bill.properties"/>-->
     <properties resource="config.properties"/>
 
     <!-- classPathEntry: 数据库的JDBC驱动 -->
@@ -45,7 +45,7 @@
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
 
         <!-- custom pagination plugin -->
-        <plugin type="com.andyadc.mybatis.ext.MySQLPaginationPlugin"/>
+        <!--        <plugin type="com.andyadc.mybatis.ext.MySQLPaginationPlugin"/>-->
 
         <!-- 去除自动生成的注释 -->
         <commentGenerator type="com.andyadc.mybatis.ext.RemarksCommentGenerator">
@@ -62,7 +62,7 @@
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
             <!-- 为true则转成Java8日期类型:LocateDateTime-->
-            <!--<property name="useJSR310Types" value="true"/>-->
+            <property name="useJSR310Types" value="${java.type.datetime.java8}"/>
         </javaTypeResolver>
 
         <!-- 生成实体类 -->
@@ -103,7 +103,7 @@
                enableCountByExample="${example.enable}">
 
             <!-- 生成主键 -->
-            <generatedKey column="id" sqlStatement="MySQL" identity="true"/>
+            <!-- <generatedKey column="flow_id" sqlStatement="MySQL" identity="true"/>-->
 
             <!--在生成列之前，对列进行重命名-->
             <!--<columnRenamingRule searchString="^prefix_" replaceString=""/>-->
