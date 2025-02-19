@@ -19,6 +19,8 @@ public class MyBatisGeneratorMain {
     private static final String GENCFG_PATH = "/generatorConfig.xml";
 
     public static void main(String[] args) {
+        System.setProperty("line.separator", "\n");
+
         List<String> warnings = new ArrayList<>();
 
         DefaultShellCallback callback = new DefaultShellCallback(OVERWRITE);
